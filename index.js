@@ -33,13 +33,26 @@
 /////////////
 // solution 4
 
-function reverseString(str) {
-  let revStr = "";
-  for (let char of str) {
-    revStr = char + revStr;
-  }
+// function reverseString(str) {
+//   let revStr = "";
+//   for (let char of str) {
+//     revStr = char + revStr;
+//   }
 
-  return revStr;
+//   return revStr;
+// }
+
+////////////////////////////
+// solution 5
+
+function reverseString(str) {
+  let newStr = "";
+
+  str.split("").forEach(function (char) {
+    newStr = char + newStr;
+  });
+
+  return newStr;
 }
 
 const output = reverseString("hello");
