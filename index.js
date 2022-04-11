@@ -21,13 +21,25 @@
 
 /////////////
 // solution 3
+// function reverseString(str) {
+//   let newStr = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     newStr = newStr + str[i];
+//   }
+
+//   return newStr;
+// }
+
+/////////////
+// solution 4
+
 function reverseString(str) {
-  let newStr = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-    newStr = newStr + str[i];
+  let revStr = "";
+  for (let char of str) {
+    revStr = char + revStr;
   }
 
-  return newStr;
+  return revStr;
 }
 
 const output = reverseString("hello");
