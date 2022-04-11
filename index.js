@@ -45,14 +45,23 @@
 ////////////////////////////
 // solution 5
 
+// function reverseString(str) {
+//   let newStr = "";
+
+//   str.split("").forEach(function (char) {
+//     newStr = char + newStr;
+//   });
+
+//   return newStr;
+// }
+
+/////////////
+
+// solution 6
 function reverseString(str) {
-  let newStr = "";
-
-  str.split("").forEach(function (char) {
-    newStr = char + newStr;
-  });
-
-  return newStr;
+  return str.split("").reduce(function (newStr, char) {
+    return char + newStr;
+  }, "");
 }
 
 const output = reverseString("hello");
