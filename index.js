@@ -120,11 +120,40 @@
 // solution 3
 ////////////////////
 
-function capitalizeFirstLetter(str) {
-  return str.replace(/\b[a-z]/gi, function (char) {
-    return char.toUpperCase();
+// function capitalizeFirstLetter(str) {
+//   return str.replace(/\b[a-z]/gi, function (char) {
+//     return char.toUpperCase();
+//   });
+// }
+
+///////////////////////////////
+// challenge 5
+////////////////////
+// ex maxCharacter('javascript')
+
+// solution 1
+
+function maxCharacter(str) {
+  const charMap = {};
+  let maxNum = 0;
+  let maxChar = "";
+
+  str.split("").forEach(function (char) {
+    if (charMap[char]) {
+      charMap[char]++;
+    } else {
+      charMap[char] = 1;
+    }
   });
+
+  for (let char in charMap) {
+    if (charMap[char] > maxNum) {
+      maxNum = charMap[char];
+      maxChar = char;
+    }
+  }
+  return maxChar;
 }
 
-const output = capitalizeFirstLetter("qabas al ani");
+const output = maxCharacter("javascript");
 console.log(output);
