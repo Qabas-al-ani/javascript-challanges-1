@@ -81,11 +81,27 @@
 // reverse an integer number
 // solution
 
-function reverseInteger(int) {
-  let newInt = int.toString().split("").reverse().join("");
+// function reverseInteger(int) {
+//   let newInt = int.toString().split("").reverse().join("");
 
-  return parseInt(newInt) * Math.sign(int);
+//   return parseInt(newInt) * Math.sign(int);
+// }
+
+////////////////////////////
+// challenge 4
+////////////////
+// capitalize first letter of the string
+
+function capitalizeFirstLetter(str) {
+  const strArray = str.toLowerCase().split(" ");
+
+  for (let i = 0; i < strArray.length; i++) {
+    strArray[i] =
+      strArray[i].substring(0, 1).toUpperCase() + strArray[i].substring(1);
+  }
+
+  return strArray.join(" ");
 }
 
-const output = reverseInteger(-12345);
+const output = capitalizeFirstLetter("qabas al ani");
 console.log(output);
