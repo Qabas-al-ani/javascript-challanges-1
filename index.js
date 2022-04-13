@@ -57,12 +57,21 @@
 
 /////////////
 
-// solution 6
-function reverseString(str) {
-  return str.split("").reduce(function (newStr, char) {
-    return char + newStr;
-  }, "");
+// // solution 6
+// function reverseString(str) {
+//   return str.split("").reduce(function (newStr, char) {
+//     return char + newStr;
+//   }, "");
+// }
+
+//////////////////////// //
+// iaPalindrome
+
+function isPalindrome(str) {
+  const revStr = str.split("").reverse().join("");
+
+  return revStr === str;
 }
 
-const output = reverseString("hello");
+const output = isPalindrome("hello");
 console.log(output);
