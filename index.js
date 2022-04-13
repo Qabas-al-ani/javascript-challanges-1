@@ -65,13 +65,27 @@
 // }
 
 //////////////////////// //
+// challenge 2
 // iaPalindrome
 
-function isPalindrome(str) {
-  const revStr = str.split("").reverse().join("");
+// function isPalindrome(str) {
+//   const revStr = str.split("").reverse().join("");
 
-  return revStr === str;
+//   return revStr === str;
+// }
+
+//////////////////////////////
+// challenge 3
+/////////////////////////////
+
+// reverse an integer number
+// solution
+
+function reverseInteger(int) {
+  let newInt = int.toString().split("").reverse().join("");
+
+  return parseInt(newInt) * Math.sign(int);
 }
 
-const output = isPalindrome("hello");
+const output = reverseInteger(-12345);
 console.log(output);
