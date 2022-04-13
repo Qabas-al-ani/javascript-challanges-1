@@ -133,27 +133,50 @@
 
 // solution 1
 
-function maxCharacter(str) {
-  const charMap = {};
-  let maxNum = 0;
-  let maxChar = "";
+// function maxCharacter(str) {
+//   const charMap = {};
+//   let maxNum = 0;
+//   let maxChar = "";
 
-  str.split("").forEach(function (char) {
-    if (charMap[char]) {
-      charMap[char]++;
+//   str.split("").forEach(function (char) {
+//     if (charMap[char]) {
+//       charMap[char]++;
+//     } else {
+//       charMap[char] = 1;
+//     }
+//   });
+
+//   for (let char in charMap) {
+//     if (charMap[char] > maxNum) {
+//       maxNum = charMap[char];
+//       maxChar = char;
+//     }
+//   }
+//   return maxChar;
+// }
+
+/////////////////////////////
+// challenge 6
+///////////////////////
+
+// Fizz buzz
+/////////////////
+
+// solution one
+
+function fizzBuzz() {
+  for (let i = 1; i <= 100; i++) {
+    if (i % 15 === 0) {
+      console.log("fizzBuzz");
+    } else if (i % 3 === 0) {
+      console.log("fizz");
+    } else if (i % 5 === 0) {
+      console.log("Buzz");
     } else {
-      charMap[char] = 1;
-    }
-  });
-
-  for (let char in charMap) {
-    if (charMap[char] > maxNum) {
-      maxNum = charMap[char];
-      maxChar = char;
+      console.log(i);
     }
   }
-  return maxChar;
 }
 
-const output = maxCharacter("javascript");
+const output = fizzBuzz();
 console.log(output);
