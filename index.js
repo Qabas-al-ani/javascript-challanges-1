@@ -92,15 +92,28 @@
 ////////////////
 // capitalize first letter of the string
 
+// function capitalizeFirstLetter(str) {
+//   const strArray = str.toLowerCase().split(" ");
+
+//   for (let i = 0; i < strArray.length; i++) {
+//     strArray[i] =
+//       strArray[i].substring(0, 1).toUpperCase() + strArray[i].substring(1);
+//   }
+
+//   return strArray.join(" ");
+// }
+
+//////////////
+// solution 2
+
 function capitalizeFirstLetter(str) {
-  const strArray = str.toLowerCase().split(" ");
-
-  for (let i = 0; i < strArray.length; i++) {
-    strArray[i] =
-      strArray[i].substring(0, 1).toUpperCase() + strArray[i].substring(1);
-  }
-
-  return strArray.join(" ");
+  return str
+    .toLowerCase()
+    .split(" ")
+    .map(function (word) {
+      return word[0].toUpperCase() + word.substring(1);
+    })
+    .join(" ");
 }
 
 const output = capitalizeFirstLetter("qabas al ani");
