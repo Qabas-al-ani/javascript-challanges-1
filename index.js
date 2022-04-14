@@ -104,7 +104,7 @@
 // }
 
 //////////////
-// solution 2
+// solution 2 for this challenges
 
 // function capitalizeFirstLetter(str) {
 //   return str
