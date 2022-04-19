@@ -190,4 +190,10 @@ function longestWord(sen) {
   const sorted = newWord.sort(function (a, b) {
     return b.length - a.length;
   });
+
+  //   if multiple words put into an array
+
+  const longestWordArray = sorted.filter(function (word) {
+    return word.length === sorted[0].length;
+  });
 }
