@@ -181,9 +181,13 @@
 // const output = fizzBuzz();
 // console.log(output);
 
-
 // Challenge Longest word
 // solution Longest
 function longestWord(sen) {
-    return sen;
-  }
+  const newWord = sen.toLowerCase().match(/[a-z0-9]+/g);
+
+  //   sort by length
+  const sorted = newWord.sort(function (a, b) {
+    return b.length - a.length;
+  });
+}
