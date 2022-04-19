@@ -178,5 +178,12 @@
 //   }
 // }
 
-const output = fizzBuzz();
-console.log(output);
+// const output = fizzBuzz();
+// console.log(output);
+
+
+// Challenge Longest word
+// solution Longest
+function longestWord(sen) {
+    return sen;
+  }
