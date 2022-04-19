@@ -183,17 +183,23 @@
 
 // Challenge Longest word
 // solution Longest
-function longestWord(sen) {
-  const newWord = sen.toLowerCase().match(/[a-z0-9]+/g);
+// function longestWord(sen) {
+//   const newWord = sen.toLowerCase().match(/[a-z0-9]+/g);
 
-  //   sort by length
-  const sorted = newWord.sort(function (a, b) {
-    return b.length - a.length;
-  });
+//   //   sort by length
+//   const sorted = newWord.sort(function (a, b) {
+//     return b.length - a.length;
+//   });
 
-  //   if multiple words put into an array
+//   //   if multiple words put into an array
 
-  const longestWordArray = sorted.filter(function (word) {
-    return word.length === sorted[0].length;
-  });
+//   const longestWordArray = sorted.filter(function (word) {
+//     return word.length === sorted[0].length;
+//   });
+// }
+
+// Challenge chunked array
+// Solution chunked
+function chunkedArray(arr, len) {
+  return chunkedArray;
 }
