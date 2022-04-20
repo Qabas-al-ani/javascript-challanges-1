@@ -203,14 +203,12 @@
 function chunkedArray(arr, len) {
   //   init chunked array
   const chunkedArr = [];
-
   //   set index
-
   let i = 0;
-
   // loop while the index is less than the arr length
   while (i < arr.length) {
     chunkedArr.push(arr[i]);
     i += len;
   }
+  return chunkedArr;
 }
