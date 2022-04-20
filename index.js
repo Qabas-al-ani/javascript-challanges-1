@@ -201,5 +201,6 @@
 // Challenge chunked array
 // Solution chunked
 function chunkedArray(arr, len) {
-  return chunkedArray;
+  //   init chunked array
+  const chunkedArr = [];
 }
