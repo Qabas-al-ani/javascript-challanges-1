@@ -203,4 +203,8 @@
 function chunkedArray(arr, len) {
   //   init chunked array
   const chunkedArr = [];
+
+  //   set index
+
+  let i = 0;
 }
