@@ -260,6 +260,7 @@
 /////////////////////////
 // CHALLENGE SEEK AND DESTROY
 // Solution
-function seekAndDestroy() {
-  return seekAndDestroy;
+function seekAndDestroy(arr, ...rest) {
+  return arr.filter(val => !rest.includes(val));
 }
+console.log(seekAndDestroy([1, 2, 3, 4, 5, "heeopp"], 1, 2));
