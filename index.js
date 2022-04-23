@@ -226,8 +226,11 @@ function addAll(...numbers) {
   // return total;
 
   /////////////////////// Solution  2 ES6
-  let total = 0;
-  numbers.forEach(num => (total += num));
-  return total;
+  // let total = 0;
+  // numbers.forEach(num => (total += num));
+  // return total;
+  //////////////////////////////////////
+  // solution 3
+  return numbers.reduce((acc, cur) => acc + cur);
 }
 console.log(addAll(6, 4, 5, 10));
