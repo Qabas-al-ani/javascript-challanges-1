@@ -259,8 +259,14 @@
 // console.log(sumAllPrimes(10));
 /////////////////////////
 // CHALLENGE SEEK AND DESTROY
-// Solution
-function seekAndDestroy(arr, ...rest) {
-  return arr.filter(val => !rest.includes(val));
+// // Solution
+// function seekAndDestroy(arr, ...rest) {
+//   return arr.filter(val => !rest.includes(val));
+// }
+// console.log(seekAndDestroy([1, 2, 3, 4, 5, "heeopp"], 1, 2));
+/////////////////////
+// challenge sort by hight
+
+function sortByHeight() {
+  return;
 }
-console.log(seekAndDestroy([1, 2, 3, 4, 5, "heeopp"], 1, 2));
