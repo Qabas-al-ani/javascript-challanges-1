@@ -215,22 +215,28 @@
 ///////////////////////////
 // Challenge add all numbers
 
-function addAll(...numbers) {
-  /////////////////////// solution arguments and for loop with es5
-  // var args = Array.prototype.slice.call(arguments);
-  // var total = 0;
+// function addAll(...numbers) {
+//   /////////////////////// solution arguments and for loop with es5
+//   // var args = Array.prototype.slice.call(arguments);
+//   // var total = 0;
 
-  // for (i = 0; i < args.length; i++) {
-  //   total += args[i];
-  // }
-  // return total;
+//   // for (i = 0; i < args.length; i++) {
+//   //   total += args[i];
+//   // }
+//   // return total;
 
-  /////////////////////// Solution  2 ES6
-  // let total = 0;
-  // numbers.forEach(num => (total += num));
-  // return total;
-  //////////////////////////////////////
-  // solution 3
-  return numbers.reduce((acc, cur) => acc + cur);
+//   /////////////////////// Solution  2 ES6
+//   // let total = 0;
+//   // numbers.forEach(num => (total += num));
+//   // return total;
+//   //////////////////////////////////////
+//   // solution 3
+//   return numbers.reduce((acc, cur) => acc + cur);
+// }
+// console.log(addAll(6, 4, 5, 10));
+
+/////////////////////////////
+
+function sumAllPrimes() {
+  return sumAllPrimes;
 }
-console.log(addAll(6, 4, 5, 10));
