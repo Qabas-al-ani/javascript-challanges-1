@@ -237,23 +237,29 @@
 
 /////////////////////////////
 
-function sumAllPrimes(num) {
-  let total = 0;
+// function sumAllPrimes(num) {
+//   let total = 0;
 
-  function isPrime(i) {
-    for (let j = 2; j < i; j++) {
-      if (i % j === 0) {
-        return false;
-      }
-    }
-    return true;
-  }
+//   function isPrime(i) {
+//     for (let j = 2; j < i; j++) {
+//       if (i % j === 0) {
+//         return false;
+//       }
+//     }
+//     return true;
+//   }
 
-  for (let i = 2; i <= num; i++) {
-    if (isPrime(i)) {
-      total += i;
-    }
-  }
-  return total;
+//   for (let i = 2; i <= num; i++) {
+//     if (isPrime(i)) {
+//       total += i;
+//     }
+//   }
+//   return total;
+// }
+// console.log(sumAllPrimes(10));
+/////////////////////////
+// CHALLENGE SEEK AND DESTROY
+// Solution
+function seekAndDestroy() {
+  return seekAndDestroy;
 }
-console.log(sumAllPrimes(10));
