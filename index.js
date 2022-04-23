@@ -214,7 +214,14 @@
 // }
 ///////////////////////////
 // Challenge add all numbers
-// solution
+// solution arguments and for loop with es5
 function addAll() {
-  return addAll;
+  var args = Array.prototype.slice.call(arguments);
+  var total = 0;
+
+  for (i = 0; i < args.length; i++) {
+    total += args[i];
+  }
+  return total;
 }
+console.log(addAll(6, 4, 5, 10));
